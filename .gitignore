@@ -1,0 +1,9 @@
+data/raw/*
+!data/raw/.gitkeep
+models/*
+!models/.gitkeep
+.venv/
+__pycache__/
+*.pyc
+.dvc/cache/
+.dvc/config.local

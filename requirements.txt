@@ -1,0 +1,10 @@
+pandas
+scikit-learn
+pyyaml
+joblib
+dvc
+ruff
+pytest
+jupytext
+nbstripout
+pre-commit
