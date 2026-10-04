@@ -1,0 +1,16 @@
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+      - data/raw/WineQT.csv
+      - src/train.py
+    params:
+      - seed
+      - split.test_size
+      - train.n_estimators
+      - train.max_depth
+    outs:
+      - models/model.joblib
+    metrics:
+      - metrics.json:
+          cache: false
