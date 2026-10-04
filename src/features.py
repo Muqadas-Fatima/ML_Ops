@@ -10,4 +10,3 @@ def binarize_quality(df: pd.DataFrame) -> pd.Series:
     """
     return (df["quality"] >= 7).astype(int)
 
-
