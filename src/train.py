@@ -22,7 +22,7 @@ def main():
     n_estimators = params["train"]["n_estimators"]
     max_depth = params["train"]["max_depth"]
 
-    df = pd.read_csv("data/raw/winequality-red.csv")
+    df = pd.read_csv("data/raw/WineQT.csv")
     X = df.drop(columns=["quality", "Id"], errors="ignore")
     y = (df["quality"] >= 7).astype(int)
 
