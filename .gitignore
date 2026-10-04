@@ -1,5 +1,6 @@
 data/raw/*
 !data/raw/.gitkeep
+!data/raw/*.dvc
 models/*
 !models/.gitkeep
 .venv/
