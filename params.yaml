@@ -1,4 +1,4 @@
-seed: 42
+seed: 100
 split:
   test_size: 0.2
 train:
