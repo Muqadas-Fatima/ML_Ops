@@ -1,0 +1,28 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+    - path: data/raw/WineQT.csv
+      hash: md5
+      md5: e2e57e4c41e6ee0213fb12e5a70f4bfb
+      size: 78057
+    - path: src/train.py
+      hash: md5
+      md5: eeb20c25ea8fd4dc8b26b0205998676c
+      size: 1600
+    params:
+      params.yaml:
+        seed: 42
+        split.test_size: 0.2
+        train.max_depth: 6
+        train.n_estimators: 100
+    outs:
+    - path: metrics.json
+      hash: md5
+      md5: fab2ad84a6f8b5404a1c505c701ece44
+      size: 107
+    - path: models/model.joblib
+      hash: md5
+      md5: 77cd68b223bfe9f65de624b92b2110ff
+      size: 611273
