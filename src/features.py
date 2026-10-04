@@ -1,12 +1,11 @@
-
 import pandas as pd
 
 
 def binarize_quality(df: pd.DataFrame) -> pd.Series:
     """
-    Convert wine quality into a binary target.
+    Convert wine quality scores into binary quality labels.
 
-    Quality 7 or higher is labeled as 1 (good),
-    while quality below 7 is labeled as 0.
+    Quality scores of 7 or higher are labeled as 1 (high quality),
+    while scores below 7 are labeled as 0 (lower quality).
     """
     return (df["quality"] >= 7).astype(int)
