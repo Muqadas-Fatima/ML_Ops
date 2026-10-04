@@ -9,3 +9,4 @@ def binarize_quality(df: pd.DataFrame) -> pd.Series:
     while scores below 7 are labeled as 0 (lower quality).
     """
     return (df["quality"] >= 7).astype(int)
+
